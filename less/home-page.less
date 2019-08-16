@@ -2,8 +2,10 @@
 
 .home {
  
-
   .intro {
+    img{
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -13,7 +15,7 @@
       padding:0 15px;
     }
   
-  }
+  }//end of intro
 
   .space-images {
     display: flex;
@@ -59,7 +61,13 @@
       }
 
       .btn {
+        .sign-btn(@porcelain, @btn-bg);
       }
+      .btn:hover{
+        background-color: @porcelain;
+        color: @btn-bg;
+      }
+
     }
 
     .walk-img {
